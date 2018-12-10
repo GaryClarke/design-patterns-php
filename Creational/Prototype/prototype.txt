@@ -1,0 +1,1 @@
+To avoid the cost of creating objects the standard way (new Foo()) and instead create a prototype and clone it.

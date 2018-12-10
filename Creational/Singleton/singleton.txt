@@ -1,0 +1,1 @@
+To have only one instance of this object in the application that will handle all calls.
