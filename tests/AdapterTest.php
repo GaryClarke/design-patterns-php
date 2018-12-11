@@ -13,7 +13,7 @@ class AdapterTest extends TestCase {
         $book = new Book();
 
         $book->open();
-        
+
         $book->turnPage();
 
         $this->assertEquals(2, $book->getPage());
