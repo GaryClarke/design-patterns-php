@@ -8,12 +8,14 @@
         }
     ],
     "require": {
-        "symfony/var-dumper": "^4.2"
+        "symfony/var-dumper": "^4.2",
+        "psr/http-message": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "Creational\\": "Creational/",
-            "Structural\\": "Structural/"
+            "Structural\\": "Structural/",
+            "Behavioral\\": "Behavioral/"
         }
     },
     "autoload-dev": {
