@@ -1,7 +1,7 @@
 <?php
 
-use More\ServiceLocator\LogService;
 use PHPUnit\Framework\TestCase;
+use More\ServiceLocator\LogService;
 use More\ServiceLocator\ServiceLocator;
 
 class ServiceLocatorTest extends TestCase {
