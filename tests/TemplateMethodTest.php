@@ -1,6 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use Behavioral\TemplateMethod\CityJourney;
+use Behavioral\TemplateMethod\BeachJourney;
 
 class TemplateMethodTest extends TestCase {
 
@@ -10,6 +12,11 @@ class TemplateMethodTest extends TestCase {
         $beachJourney = new BeachJourney();
 
         $beachJourney->takeTrip();
+
+        $this->assertEquals(
+            ['Buy a flight ticket', 'Taking the plane', 'Doing beach stuff', 'Taking the plane'],
+            $beachJourney->getThingsToDo()
+        );
     }
 
     /** @test */
@@ -18,5 +25,9 @@ class TemplateMethodTest extends TestCase {
         $cityJourney = new CityJourney();
 
         $cityJourney->takeTrip();
+
+        $this->assertEquals([
+            'Buy a flight ticket', 'Taking the plane', 'Take city photos', 'Buy a gift', 'Taking the plane',
+        ], $cityJourney->getThingsToDo());
     }
 }

@@ -10,7 +10,7 @@ abstract class Journey {
     /**
      * Freeze the global behaviour of the algorithm.
      */
-    final public function takeATrip()
+    final public function takeTrip()
     {
         $this->thingsToDo[] = $this->buyAFlight();
         $this->thingsToDo[] = $this->takePlane();
@@ -47,10 +47,10 @@ abstract class Journey {
 
     private function takePlane()
     {
-        return 'Talking the plane';
+        return 'Taking the plane';
     }
 
-    private function getThingsToDo()
+    public function getThingsToDo()
     {
         return $this->thingsToDo;
     }
